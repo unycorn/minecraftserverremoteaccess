@@ -1,3 +1,3 @@
-Minecraft server remote control
+Minecraft Server Remote Access
 
 Remote access and control of my minecraft server
