@@ -17,7 +17,23 @@
       <p>This is a website being worked on by Camden. The source can be found <a class="source" href="https://github.com/Softchair/minecraftserverremoteacess">here</a></p>
       <p>So far only this page has been created, but more is to come.</p>
     </div>
+    <h5>Run Minecraft Server!</h5>
+    <input type="submit" value="Start" onclick="submit()">
   </div>
+
+  <script type="text/javascript">
+    function submit() {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                alert(xhr.response);
+            }
+        }
+        xhr.open('get', 'http://localhost:3000', true);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+        xhr.send();
+    }
+  </script>
   
 </body>
 </html>
